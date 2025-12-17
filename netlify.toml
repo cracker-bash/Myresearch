@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_USE_NETLIFY_EDGE = "false"
+
+# Enable Next.js Runtime for API routes as serverless functions
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Redirect all requests through Next.js
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/___netlify-handler"
+  status = 200
+
+# Headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
