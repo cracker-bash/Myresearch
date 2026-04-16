@@ -23,7 +23,7 @@ Mradi huu umetengenezwa kwa madhumuni ya:
 **Tito Oscar Mwaisengela**  
 - Chuo: University of Dar es Salaam (UDSM)  
 - Kitivo: College of Information and Communication Technology (COICT)  
-- Kozi: Bachelor of Science in Computer Science  
+- Kozi: Computer Science  
 - Email: titomwaisengela@gmail.com  
 - Simu: +255 618 238 986  
 - WhatsApp: +255 614 538 424  
@@ -61,7 +61,7 @@ Mradi huu umetengenezwa kwa madhumuni ya:
 ## 🛠️ Teknolojia Zilizotumika
 
 - **Frontend:** Next.js (React)
-- **Backend:** Supabase (Database & API)
+- **Backend:** MySQL (Database & API)
 - **Hosting:** Netlify
 - **Styling:** Tailwind CSS
 - **Deployment:** Netlify CI/CD
@@ -82,7 +82,7 @@ Mradi huu umetengenezwa kwa madhumuni ya:
 
 ```bash
 # clone repo
-git clone https://github.com/USERNAME/myresearch.git
+git clone https://github.com/tito-devsec/myresearch.git
 
 # ingia kwenye folder
 cd myresearch
